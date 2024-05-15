@@ -1,0 +1,194 @@
+// ** React Imports
+import { useEffect, useState } from 'react'
+
+// ** Next Import
+import Link from 'next/link'
+
+// ** MUI Imports
+import Box from '@mui/material/Box'
+import Card from '@mui/material/Card'
+import Button from '@mui/material/Button'
+import Tooltip from '@mui/material/Tooltip'
+import { DataGrid } from '@mui/x-data-grid'
+import IconButton from '@mui/material/IconButton'
+import Typography from '@mui/material/Typography'
+import CardContent from '@mui/material/CardContent'
+
+// ** Icon Imports
+import Icon from 'src/@core/components/icon'
+
+// ** Custom Components Imports
+import CustomChip from 'src/@core/components/mui/chip'
+
+// ** Store & Actions Imports
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchData, deleteCompany } from 'src/store/apps/company'
+
+// ** Type Imports
+import { RootState, AppDispatch } from 'src/store'
+import { LocationsType } from 'src/types/apps/location'
+import { ThemeColor } from 'src/@core/layouts/types'
+
+// ** Custom Component Imports
+import CustomAvatar from 'src/@core/components/mui/avatar'
+import OptionsMenu from 'src/@core/components/option-menu'
+
+interface CellType {
+  row: LocationsType
+}
+
+interface UserStatusType {
+  [key: string]: ThemeColor
+}
+
+// ** renders client column
+const userStatusObj: UserStatusType = {
+  active: 'success',
+  active1: 'primary',
+  active2: 'error',
+  active3: 'warning',
+  active4: 'info',
+  inactive: 'secondary'
+}
+
+const defaultColumns = [
+  {
+    flex: 0.2,
+    field: 'id',
+    minWidth: 90,
+    headerName: 'ID',
+ 
+    renderCell: ({ row }: CellType) => (
+      <Typography sx={{ color: 'text.secondary'  }}>{row.id}</Typography>
+    )
+  },
+  {
+    flex: 0.3,
+    field: 'name',
+    minWidth: 120,
+    headerName: ' Name',
+ 
+    renderCell: ({ row }: CellType) => (
+      <Typography sx={{ textTransform: 'capitalize', color: 'text.secondary'  }}>
+        {row.name || 'damascus'}
+      </Typography>
+    )
+  },
+  {
+    flex: 0.3,
+    field: 'country_id',
+    minWidth: 100,
+    headerName: 'Country Id',
+ 
+    renderCell: ({ row }: CellType) => (
+      <Typography sx={{ color: 'text.secondary'  }}>
+        {row.country_id || 56366}
+      </Typography>
+    )
+  },
+  {
+    flex: 0.3,
+    field: 'calling_code',
+    minWidth: 100,
+    headerName: 'Calling Code',
+ 
+    renderCell: ({ row }: CellType) => (
+      <Typography sx={{ color: 'text.secondary'  }}>
+        {row.calling_code || 58272}
+      </Typography>
+    )
+  }
+]
+
+const AttributesTable = () => {
+  // ** State
+  const [value, setValue] = useState<string>('')
+  const [pageSize, setPageSize] = useState<number>(6)
+  const [statusValue, setStatusValue] = useState<string>('')
+
+  // ** Hooks
+  const dispatch = useDispatch<AppDispatch>()
+  const store = useSelector((state: RootState) => state.company)
+
+  const staticRows = [
+    { id: 1, name: 'Location 1', country_id: '12345', calling_code: '98765' },
+    { id: 2, name: 'Location 2', country_id: '67890', calling_code: '54321' },
+    { id: 3, name: 'Location 3', country_id: '54321', calling_code: '67890' },
+    { id: 4, name: 'Location 4', country_id: '98765', calling_code: '12345' },
+    { id: 5, name: 'Location 5', country_id: '24680', calling_code: '13579' },
+    { id: 6, name: 'Location 6', country_id: '13579', calling_code: '24680' }
+  ];
+
+  const rows = [...staticRows, ...store.data];
+
+  useEffect(() => {
+    dispatch(
+      fetchData({
+        q: value,
+        status: statusValue
+      })
+    )
+  }, [dispatch, statusValue, value])
+
+  const columns = [
+    ...defaultColumns,
+    {
+      flex: 0.2,
+      minWidth: 100,
+      sortable: false,
+      field: 'actions',
+      headerName: 'Actions',
+   
+      renderCell: ({ row }: CellType) => (
+        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center'  }}>
+          <Tooltip title='Delete Company'>
+            <IconButton size='small' onClick={() => dispatch(deleteCompany(row.id))}>
+              <Icon icon='tabler:trash' fontSize={20} />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title='Edit Company'>
+            <IconButton size='small' onClick={() => (window.location.href = `/apps/invoice/edit/${row.id}`)}>
+              <Icon icon='tabler:pencil' fontSize={20} />
+            </IconButton>
+          </Tooltip>
+        </Box>
+      )
+    }
+  ]
+
+  return (
+    <Card>
+      <Box
+        sx={{
+          py: 4,
+          px: 6,
+          rowGap: 2,
+          columnGap: 4,
+          display: 'flex',
+          flexWrap: 'wrap',
+          alignItems: 'center',
+          justifyContent: 'space-between'
+        }}
+      >
+        <Typography sx={{ fontWeight: 'bold', fontSize: 20 }}> LOCATIONS</Typography>
+        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <Button component={Link} variant='contained' href='/locations/add' startIcon={<Icon icon='tabler:plus' />}>
+            ADD LOCATION
+          </Button>
+        </Box>
+      </Box>
+      <DataGrid
+        autoHeight
+        rowHeight={54}
+        rows={rows}
+        columns={columns}
+        pageSize={pageSize}
+        disableSelectionOnClick
+        rowsPerPageOptions={[6, 10, 25, 50]}
+        onPageSizeChange={newPageSize => setPageSize(newPageSize)}
+      />
+    </Card>
+  )
+}
+
+export default AttributesTable
