@@ -1,92 +1,132 @@
-# Dashboard
+# Transportation Dashboard
 
 
+## Dashboard Tables
 
-## Getting started
+Addresses Tables
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+![Screenshot (32)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/b88dc114-8f65-47e9-9969-c946984b68c9)
+![Screenshot (33)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/a94709de-bdbb-4ae0-9ce7-bc555218ec5d)
+![Screenshot (34)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/4091b69b-66c4-411b-94ab-1ccee239bc6b)
+![Screenshot (35)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/0587e219-2b0b-4429-a1d4-9b44a3e4502c)
+![Screenshot (36)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/9d9dad91-b775-4938-8fdb-03e313b0f348)
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+Users Tables
 
-## Add your files
+![Screenshot (37)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/ed041f3f-2a79-452f-839f-2a548f1a0dec)
+![Screenshot (38)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/df930e00-1202-4637-9a77-247f86bc7b3f)
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+Companies Tables 
 
-```
-cd existing_repo
-git remote add origin https://gitlab.com/axtrotransport/dashboard.git
-git branch -M main
-git push -uf origin main
-```
+![Screenshot (41)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/7695fcd5-239f-4b44-96fa-0221a5198205)
+![Screenshot (29)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/369b571c-6fd7-4905-8220-58aa1fba97a0)
+![Screenshot (39)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/e9989174-4c2c-49ae-8f45-570f6925bf90)
+![Screenshot (40)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/601598c9-f99d-473c-a3da-a8423a0a0ff8)
 
-## Integrate with your tools
+Jobs Tables 
 
-- [ ] [Set up project integrations](https://gitlab.com/axtrotransport/dashboard/-/settings/integrations)
+![Screenshot (42)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/855cae8e-1b66-4ea5-81a5-491447b80b97)
+![Screenshot (43)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/3f970e9d-e7c8-413e-8c41-19c1c97a8510)
+![Screenshot (44)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/76711a2c-9b2f-4a2b-9d72-f2172fbaa6d0)
+![Screenshot (45)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/17cd0d86-bab4-4a3e-8430-3cf28421b4bb)
+![Screenshot (47)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/0f84948e-0bfc-4816-ba2c-cc5792ae2d43)
 
-## Collaborate with your team
+Orders Tables
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+![Screenshot (49)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/2821691c-9ada-4399-bcef-983b99cb1703)
+![Screenshot (51)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/450c7fb5-056c-4423-9107-cb908ad1343b)
 
-## Test and Deploy
+Trips Tables
 
-Use the built-in continuous integration in GitLab.
+![Screenshot (53)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/034da1f8-41d0-47e3-a02e-f9994584ffa7)
+![Screenshot (54)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/23fbb83f-7832-4725-b653-1671f1c0edef)
+![Screenshot (55)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/fc089448-ea46-4544-84e2-5e60875d60b9)
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+Passengeres Tables 
+
+![Screenshot (56)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/b72a58f9-330b-47c0-9fb3-82ae654dbbf4)
+![Screenshot (58)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/9e25074f-12f0-434d-be51-f2a7b18afa52)
+
+Basic Pages 
+
+![Screenshot (59)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/970ec130-7f50-4c4e-91d7-5a7f2f96bf99)
+![Screenshot (61)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/67014d8f-918b-4ceb-9658-314d6eae1a50)
+![Screenshot (62)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/bd6154a0-a6d0-426a-ba6d-d1055ea8038d)
+
 
 ***
 
-# Editing this README
+## Dashboard Add Forms
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+Addresses Add Forms
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+![Screenshot (63)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/53c4b472-897e-45ad-b1a4-6af7d750b740)
+![Screenshot (64)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/173e3544-86d6-44f8-b46b-8bd11219d2bf)
+![Screenshot (65)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/1e4cb969-03be-4840-8c01-ba2f43ba693d)
+![Screenshot (66)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/6ad00e44-d3af-4937-980b-d3132c1bd742)
+![Screenshot (67)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/cb9e8432-811b-459f-8f7f-2c1d7515eab9)
+
+Users Add Forms
+
+![Screenshot (68)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/a4ae7fba-2482-4382-bb78-734998bc5758)
+
+Companies Add Forms
+
+![Screenshot (69)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/cb68ded2-fb34-45e0-be74-2561394dc695)
+
+Jobs Add Form 
+
+![Screenshot (70)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/59fc3730-bdb1-44f2-b202-c25583c166dc)
+![Screenshot (71)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/7e293611-8a6c-432e-bbfe-ab04885ef7dd)
+![Screenshot (72)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/4d0c8b6b-1d93-4ee5-97b1-87ca4ecbbb82)
+![Screenshot (73)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/56223a8a-03bd-4e99-9ab9-4b800b7ef6fd)
+
+Orders Add Forms
+
+![Screenshot (74)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/7e638f5d-0b59-46cd-bff4-01d500d30d55)
+![Screenshot (75)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/d41b374d-8b00-4035-9780-8ea805cf72e9)
+
+Trips Add Forms 
+
+![Screenshot (76)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/6d50f7e7-a2d8-47b0-bf56-0fa19ebe1bfe)
+
+Passengers Add Forms 
+
+![Screenshot (77)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/b5ad08df-6b7d-4f2d-8900-1fddf22e44eb)
+
+Basic Pages Add Forms 
+
+![Screenshot (78)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/fe4d01ce-3c10-4146-9b21-77e8be964540)
+![Screenshot (79)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/0ca1c35d-7464-4f0d-97a4-4e5a299bb051)
+![Screenshot (80)](https://github.com/zainab224498/Transportation-Dashboard/assets/167907666/93401110-95b2-4a40-8087-86722ca7b8da)
+
+
+***
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm run dev`
+
+Runs the app in the development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
 
 ## Name
-Choose a self-explaining name for your project.
+Transportation
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
